@@ -1,21 +1,23 @@
 {
-    "name": "eimg/tinymvc",
-    "description": "A simple, zero-dependency PHP MVC framework",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ei Maung"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
-        }
-    },
-    "scripts": {
-        "start": "php -S localhost:8000 -t public"
+  "name": "eimg/tinymvc",
+  "description": "A simple, zero-dependency PHP MVC framework",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ei Maung"
     }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8000 -t public"
+  }
 }
