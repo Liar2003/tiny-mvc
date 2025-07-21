@@ -18,7 +18,7 @@ return [
 
 	// --- Default: SQLite ---
 	"dbdriver" => "sqlite",
-	"db" => "/app/src/data/db.sqlite",
+	"db" => "src/data/db.sqlite",
 
 	// --- Uncomment below to use MySQL ---
 	// "dbdriver" => "mysql",
