@@ -6,9 +6,10 @@ declare(strict_types=1);
 define('BASE_PATH', dirname(__DIR__));
 
 // Autoloader
-require BASE_PATH . 'vendor/autoload.php';
+
 
 echo BASE_PATH;
+require BASE_PATH . '../vendor/autoload.php';
 
 // // Load configuration
 // $config = require BASE_PATH . 'src/config.php';
