@@ -9,7 +9,7 @@ class Router
 
     public function __construct()
     {
-        $routes = require BASE_PATH . '/src/routes.php';
+        $routes = require BASE_PATH . 'app/src/routes.php';
         foreach ($routes as $key => $value) {
             $this->routes[trim($key, '/')] = $value;
         }
@@ -37,7 +37,7 @@ class Router
         } else {
             // Handle 404
             http_response_code(404);
-            require BASE_PATH . '/public/404.html';
+            require BASE_PATH . 'app/public/404.html';
         }
     }
 }
