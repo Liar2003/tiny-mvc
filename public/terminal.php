@@ -263,7 +263,7 @@ function clear_command()
             current_command_index--;
             if (current_command_index < 0) {
                 current_command_index = 0;
-                return;
+                return; 
             }
             document.getElementById('command').value = previous_commands[current_command_index];
         }
