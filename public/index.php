@@ -10,9 +10,9 @@ require BASE_PATH . 'vendor/autoload.php';
 
 echo BASE_PATH;
 
-// Load configuration
-$config = require BASE_PATH . 'src/config.php';
+// // Load configuration
+// $config = require BASE_PATH . 'src/config.php';
 
-// Instantiate and run the application
-$app = new App\Core\Application($config);
-$app->run();
+// // Instantiate and run the application
+// $app = new App\Core\Application($config);
+// $app->run();
