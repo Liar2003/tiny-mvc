@@ -5,10 +5,12 @@ declare(strict_types=1);
 // Project root
 define('BASE_PATH', dirname(__DIR__));
 
+var_dump(__DIR__);
+exit;
 // Autoloader
 require '/../vendor/autoload.php';
 
-echo BASE_PATH;
+
 
 // Load configuration
 $config = require  '/../src/config.php';
