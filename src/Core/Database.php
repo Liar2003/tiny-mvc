@@ -27,7 +27,7 @@ class Database
                     die("MySQL Connection failed: " . $e->getMessage());
                 }
             } else {
-                $dsn = "sqlite:" . BASE_PATH . "/{$config['db']}";
+                $dsn = "sqlite:" . BASE_PATH . "/src/data/{$config['db']}";
                 try {
                     self::$instance = new PDO($dsn);
                     self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
