@@ -22,12 +22,12 @@ class Home
             return false;
         }
 
-        $stmt = $this->db->prepare("INSERT INTO contact_records (name, email, msg) VALUES (:name, :email, :msg)");
+        $stmt = $this->db->prepare("INSERT INTO contact_records (name, email, message) VALUES (:name, :email, :message)");
 
         return $stmt->execute([
             ':name' => htmlspecialchars($data['name']),
             ':email' => $data['email'],
-            ':msg' => htmlspecialchars($data['msg']),
+            ':message' => htmlspecialchars($data['msg']),
         ]);
     }
 }
