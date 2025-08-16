@@ -30,7 +30,7 @@ if (!empty($data['matches'])) {
             "startTime" => $match["startTime"],
             "category"  => $match["category"],
             "image"     => $match["image"],
-            "stream"    => $match["STREAMING_CDN"]["Primary_Playback_URL"] ?? null,
+            "stream"    => $match["adfree_stream"] ?? null,
             "teams"     => []
         ];
 
